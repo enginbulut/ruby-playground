@@ -1,0 +1,30 @@
+4.times do |count|
+  puts "Software engineering is great (#{count + 1})"
+end
+
+10.times do |count|
+  puts 'let\'s show the next multiple'
+  puts "#{3 * (count + 1)}"
+end
+
+5.downto(1) do |i|
+  puts "Countdown: #{i}"
+end
+
+puts
+
+0.upto(5) do |i|
+  puts "Countdown: #{i}"
+end
+
+puts
+
+1.step(100, 5) do |number|
+  puts "Number #{number}"
+end
+
+puts
+
+0.step(85, 7) do |number|
+  puts "Number2 #{number}"
+end
