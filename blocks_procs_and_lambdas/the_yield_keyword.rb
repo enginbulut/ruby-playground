@@ -53,3 +53,14 @@ end
 custom_each(numbers) do |number|
   puts "The square of #{number} is #{number**2}"
 end
+
+
+def get_total(x)
+  return 0 if x.zero?
+
+  total = x
+  total += get_total(x - 1)
+  total
+end
+
+puts get_total(2)
